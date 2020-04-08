@@ -1,9 +1,12 @@
 package objectmaster;
 
 public class Samurai extends Human {
+	public static int number;
+	
 	public Samurai() {
 		super();
 		setHealth(200);
+		number++;
 	}
 	
 	public void deathBlow(Human someone) {
@@ -16,6 +19,6 @@ public class Samurai extends Human {
 	}
 	
 	public int howMany() {
-		return this.getHealth();
+		return number;
 	}
 }
