@@ -1,7 +1,8 @@
 package objectmaster;
 
 public class Samurai extends Human {
-	public static int number;
+	// static - all class objects shared the same variable
+	public static int number;	// number of samurai
 	
 	public Samurai() {
 		super();
@@ -18,7 +19,9 @@ public class Samurai extends Human {
 		this.setHealth(this.getHealth() * (3/2));
 	}
 	
-	public int howMany() {
+	public static int howMany() {		
+		// can only access static method/variable
+		// inside static method
 		return number;
 	}
 }

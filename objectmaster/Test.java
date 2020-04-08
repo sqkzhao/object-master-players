@@ -13,6 +13,6 @@ public class Test {
 		playerN.steal(playerW);
 		playerS.deathBlow(playerN);
 		playerN.getHealth();
-		System.out.println(player3.howMany());
+		System.out.println(Samurai.howMany());
 	}
 }
