@@ -42,6 +42,7 @@ public class Human {
 	}
 
 	public int getHealth() {
+		System.out.println(String.format("Current health: %d.", health));
 		return health;
 	}
 
